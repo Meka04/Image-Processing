@@ -5,6 +5,8 @@
 #include "Point.h"
 #include "ImageProcessing.h"
 
+//remove anything between P2(type) and width and height
+
 int main() {
     Image img;
     Image result;
