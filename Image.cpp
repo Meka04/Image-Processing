@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 Image::Image() {
-    m_data = nullptr;
+    this->m_data = nullptr;
     this->m_width = 0;
     this->m_height = 0;
 }
@@ -177,6 +177,7 @@ bool Image::load(std::string imagePath) {
         std::cerr << "Failed to open the file\n";
         return false;
     }
+
     std::string format;
     file>>format;
     if(format!="P2")
